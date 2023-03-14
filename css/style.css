@@ -58,6 +58,13 @@ hr {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 30px;
+	
+
+}
+.img-gls{
+	align-items: center;
+	margin-top: 0%;
+	width: 50em; height: 30em; 
 }
 
 .large {
@@ -65,6 +72,7 @@ hr {
 }
 
 .display-1 {
+	font-style: initial;
 	font-size: 80px;
 }
 
@@ -98,7 +106,7 @@ hr {
 
 /* Header */
 #mainheader {
-	background: url('/images/istockphoto-1210918301-612x612.jpeg');
+	background: url();
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -299,4 +307,8 @@ hr {
   #contact-form textarea:focus {
 	outline: none;
 	border-color: var(--main-color);
+  }
+  .foto-about{
+	width: 
+	30em; height: 22em; 
   }
