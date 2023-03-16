@@ -57,7 +57,7 @@ hr {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 5px;
 	
 
 }
@@ -87,18 +87,18 @@ hr {
 }
 
 .btn-outline {
-	border: 2px solid #e1a87a;
+	border: 2px solid #f49020;
 	color: #fff;
 }
 
 .btn-outline:hover {
-	background: #e1a87a;
-	border: 2px solid #e1a87a;
+	background: #f49020;
+	border: 2px solid #f49020;
 	color: #fff;
 }
 
 .btn-link {
-	color: #e1a87a;
+	color: #f49020;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 400;
@@ -106,11 +106,14 @@ hr {
 
 /* Header */
 #mainheader {
-	background: url();
+	background-image:url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-3d-stereo-positioning-background-image-image_265254.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+}
+.subtitle{
+	font-size: 15px;
 }
 
 /* Navbar */
@@ -120,6 +123,7 @@ hr {
 
 #navbar .logo img {
 	height: 60px;
+	
 }
 
 #navbar a {
@@ -216,6 +220,7 @@ hr {
 }
 
 #contact .contact-social img {
+
 	height: 30px;
 	margin: 5px;
 }
@@ -231,11 +236,13 @@ hr {
 }
 
 
+.box-from{
+	margin: 2px;
+}
 
 
 
-
- .features-contact .box-form{
+ .features-contact{
 	float: left;
 	width: 100%;
 	padding: 60px 10px 20px 10px;
@@ -309,7 +316,6 @@ hr {
 	border-color: var(--main-color);
   }
   .foto-about{
-	width: 
-	30em; height: 20em; 
+	width: 20em; height: 20em; 
   }
   
