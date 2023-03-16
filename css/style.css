@@ -55,6 +55,7 @@ hr {
 
 /* Utility Classes */
 .container {
+	
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 5px;
@@ -87,8 +88,11 @@ hr {
 }
 
 .btn-outline {
-	border: 2px solid #f49020;
-	color: #fff;
+	border-radius: 2px solid;
+	border-color: #f49020 ;
+	color: #fffefe;
+	background-color: #000;
+	border-radius:10% ;
 }
 
 .btn-outline:hover {
@@ -106,11 +110,11 @@ hr {
 
 /* Header */
 #mainheader {
-	background-image:url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-3d-stereo-positioning-background-image-image_265254.jpg);
+	background-image:url(https://static.vecteezy.com/system/resources/previews/005/319/751/non_2x/landing-page-template-digital-marketing-analyst-marketing-business-website-design-with-cartoon-people-free-vector.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	height: 100vh;
+	height: 100%;
+	
 }
 .subtitle{
 	font-size: 15px;
@@ -127,7 +131,7 @@ hr {
 }
 
 #navbar a {
-	color: #fff;
+	color: #000000;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
