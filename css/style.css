@@ -72,9 +72,10 @@ hr {
 	font-size: 18px;
 }
 
-.display-1 {
+.display-1{
 	font-style: initial;
 	font-size: 80px;
+	
 }
 
 .btn {
@@ -88,11 +89,12 @@ hr {
 }
 
 .btn-outline {
-	border-radius: 2px solid;
+	margin-bottom: 2px;
 	border-color: #f49020 ;
 	color: #fffefe;
 	background-color: #000;
-	border-radius:10% ;
+	border-radius: 5px;;
+	
 }
 
 .btn-outline:hover {
@@ -110,10 +112,13 @@ hr {
 
 /* Header */
 #mainheader {
-	background-image:url(https://static.vecteezy.com/system/resources/previews/005/319/751/non_2x/landing-page-template-digital-marketing-analyst-marketing-business-website-design-with-cartoon-people-free-vector.jpg);
+	background-image:url(https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg);
+	/* https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
+	background-position: center;
+	
+	
 	
 }
 .subtitle{
@@ -131,7 +136,7 @@ hr {
 }
 
 #navbar a {
-	color: #000000;
+  color: #ddd;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;

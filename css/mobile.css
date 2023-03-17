@@ -1,6 +1,18 @@
 /* Utility Classes */
 .display-1 {
-	font-size: 50px;
+	font-size: 40px;
+}
+#mainheader {
+	background-image:url(https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg);
+
+	/* https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg */
+	background-repeat: no-repeat;
+	background-size: cover;
+	 background-position: center; 
+	 height: 100%;
+	 ;
+	
+	
 }
 
 /* Header */

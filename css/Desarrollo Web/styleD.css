@@ -68,7 +68,11 @@ hr {
 }
 
 .large {
-	font-size: 20px;
+	font-size: 17px;
+}
+.Large-1{
+	text-decoration: underline white;  
+	font-size: 17px;
 }
 
 .display-1 {
