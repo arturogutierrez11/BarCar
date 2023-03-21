@@ -122,7 +122,12 @@ hr {
 	margin-left: 40px;
 }
 
-
+ .whatsapp-D{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 1;
+} 
 
 /* Work */
 #work {
@@ -141,6 +146,8 @@ hr {
 	border: 2px solid #1c1c1c;
 	margin: 10px;
 	padding: 30px;
+	background-color: #fff;
+	color: #000;
 }
 
 #work .work-row-box p {
@@ -213,4 +220,42 @@ hr {
 
 #contact .contact-social {
 	text-align: right;
+}
+.slider {
+    width: 100vw;
+	height: 100px;
+   
+    margin: auto;
+    overflow: hidden;
+	background: #fff;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+.img-css{
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
 }

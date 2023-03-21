@@ -92,14 +92,13 @@ hr {
 	margin-bottom: 2px;
 	border-color: #f49020 ;
 	color: #fffefe;
-	background-color: #000;
+	background-color: #f49020;
 	border-radius: 5px;;
 	
 }
 
 .btn-outline:hover {
-	background: #f49020;
-	border: 2px solid #f49020;
+	
 	color: #fff;
 }
 
@@ -129,6 +128,7 @@ hr {
 /* Navbar */
 #navbar {
 	height: 120px;
+	
 }
 
 #navbar .logo img {
@@ -175,17 +175,26 @@ hr {
 
 #work .work-row {
 	display: flex;
+	
+}
+.title-1{
+	display: inline;
+	
 }
 
 #work .work-row-box {
 	border: 2px solid #1c1c1c;
 	margin: 10px;
 	padding: 30px;
+	background-color: #ffffff;
+	color:#000;
+	border-radius: 2%;
 }
 
 #work .work-row-box p {
 	padding-bottom: 17px;
 }
+
 
 /* About */
 #about {
@@ -364,4 +373,10 @@ hr {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
+}
+.whatsapp{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 1;
 }
