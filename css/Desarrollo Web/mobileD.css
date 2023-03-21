@@ -35,5 +35,6 @@
 	width: 100%;
 	background-color: rgb(98, 98, 98);
 	position: fixed;
+	z-index: 1
 }
 
