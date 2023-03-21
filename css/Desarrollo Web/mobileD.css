@@ -28,6 +28,12 @@
 
 .foto-about{
 	width: 100%;
+	margin-top: 92px;
 	
+}
+#navbar{
+	width: 100%;
+	background-color: rgb(98, 98, 98);
+	position: fixed;
 }
 
