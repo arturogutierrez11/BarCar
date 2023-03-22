@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 
 /* Reset */
 * {
@@ -11,10 +11,81 @@
 /* Main Styling */
 html,
 body {
-	font-family: 'Poppins', sans-serif;
-	background: #000;
+	font-family: "Poppins", sans-serif;
 	color: #fff;
+	overflow: auto;
+	background: linear-gradient(
+		315deg,
+		rgb(5, 29, 41) 3%,
+		rgb(54, 3, 43) 38%,
+		rgb(37, 26, 4) 68%,
+		rgb(0, 0, 0) 98%
+	);
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+	background-attachment: fixed;
+	overflow-x: hidden;
 	line-height: 1.5;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+.wave {
+	background: rgb(255 255 255 / 25%);
+	border-radius: 1000% 1000% 0 0;
+	position: fixed;
+	width: 200%;
+	height: 12em;
+	animation: wave 10s -3s linear infinite;
+	transform: translate3d(0, 0, 0);
+	opacity: 0.8;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+	bottom: -1.25em;
+	animation: wave 18s linear reverse infinite;
+	opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+	bottom: -2.5em;
+	animation: wave 20s -1s reverse infinite;
+	opacity: 0.9;
+}
+
+@keyframes wave {
+	2% {
+		transform: translateX(1);
+	}
+
+	25% {
+		transform: translateX(-25%);
+	}
+
+	50% {
+		transform: translateX(-50%);
+	}
+
+	75% {
+		transform: translateX(-25%);
+	}
+
+	100% {
+		transform: translateX(1);
+	}
 }
 
 h1 {
@@ -30,7 +101,7 @@ h4 {
 h1,
 h2,
 h4 {
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: "Libre Baskerville", sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -55,54 +126,56 @@ hr {
 
 /* Utility Classes */
 .container {
-	
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 5px;
-	
-
 }
-.img-gls{
+.img-gls {
 	align-items: center;
 	margin-top: 0%;
-	width: 50em; height: 30em; 
+	width: 50em;
+	height: 30em;
 }
 
 .large {
 	font-size: 18px;
 }
 
-.display-1{
+.display-1 {
 	font-style: initial;
 	font-size: 50px;
-	
 }
 
-.btn {
+.btn2 {
 	display: inline-block;
-	font-size: 13px;
+	font-size: 1.2rem;
 	padding: 20px 45px;
 	text-transform: uppercase;
 	cursor: pointer;
-	font-weight: 400;
+	font-weight: 600;
 	letter-spacing: 1px;
+	box-shadow: 1em 1em 1em 0.5em rgba(0, 0, 0, 0.404);
 }
 
-.btn-outline {
+.btn2-outline {
 	margin-bottom: 2px;
-	border-color: #f49020 ;
-	color: #fffefe;
-	background-color: #f49020;
-	border-radius: 5px;;
-	
+
+	border-color: #f49020;
+	color: white;
+	background: #f49020;
+	border-radius: 10px;
+	text-decoration: none;
 }
 
-.btn-outline:hover {
-	
-	color: #fff;
+.btn2-outline:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #f49020;
+	border-color: white;
+	border: 3px solid;
 }
 
-.btn-link {
+.btn2-link {
 	color: #f49020;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -111,36 +184,36 @@ hr {
 
 /* Header */
 #mainheader {
-	background-image:url(http://www.solofondos.com/wp-content/uploads/2015/11/fondo.png);
+	/* background-image:url(http://www.solofondos.com/wp-content/uploads/2015/11/fondo.png); */
 	/* https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	
-	
-	
 }
-.subtitle{
+.subtitle {
 	font-size: 15px;
 }
 
 /* Navbar */
 #navbar {
 	height: 120px;
-	
 }
 
 #navbar .logo img {
-	height: 60px;
-	
+	height: 4rem;
+	box-shadow: 0em 0em 0em 0.5em #f491203a;
+	background: transparent;
+	border-radius: 10px;
 }
 
 #navbar a {
-  color: #ddd;
-	font-size: 14px;
+	color: #ddd;
+	font-size: 1.1rem;
 	font-weight: 400;
 	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.8px;
 }
 
 #navbar .container {
@@ -175,11 +248,9 @@ hr {
 
 #work .work-row {
 	display: flex;
-	
 }
-.title-1{
+.title-1 {
 	display: inline;
-	
 }
 
 #work .work-row-box {
@@ -187,14 +258,13 @@ hr {
 	margin: 10px;
 	padding: 30px;
 	background-color: #ffffff;
-	color:#000;
+	color: #000;
 	border-radius: 2%;
 }
 
 #work .work-row-box p {
 	padding-bottom: 17px;
 }
-
 
 /* About */
 #about {
@@ -239,7 +309,6 @@ hr {
 }
 
 #contact .contact-social img {
-
 	height: 30px;
 	margin: 5px;
 }
@@ -254,127 +323,124 @@ hr {
 	padding: 30px;
 }
 
-.nuestros-s{
+.nuestros-s {
 	color: #f49020;
 	font-size: 33px;
-	
 }
-.box-from{
+.box-from {
 	margin: 2px;
 }
 
-
-
- .features-contact{
+.features-contact {
 	float: left;
 	width: 100%;
 	padding: 60px 10px 20px 10px;
-  }
-  
-   .features-contact .box-form iframe{
+}
+
+.features-contact .box-form iframe {
 	width: 100%;
 	height: 400px;
-  }
-  
-  /* Contact Form */
-  #contact #contact-form .single-form {
+}
+
+/* Contact Form */
+#contact #contact-form .single-form {
 	margin-bottom: 20px;
-  }
-  
-  #contact {
+}
+
+#contact {
 	height: 70px;
-	padding-top: 50px; 
-	padding-bottom: 100px; 
-  }
-  
-  #contact .box-contact-features {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#contact .box-contact-features {
 	float: left;
 	width: 33.3%;
 	text-align: center;
-  }
-  
-  #contact .box-contact-features i {
+}
+
+#contact .box-contact-features i {
 	padding-bottom: 20px;
-  }
-  
-  #contact .box-contact-features p {
-	line-height: .8em;
-  }
-  
-  #contact .features-contact .box-form{
+}
+
+#contact .box-contact-features p {
+	line-height: 0.8em;
+}
+
+#contact .features-contact .box-form {
 	float: left;
 	width: 50%;
 	padding: 60px 10px 20px 10px;
-  }
-  
-  #contact .features-contact .box-form iframe{
+}
+
+#contact .features-contact .box-form iframe {
 	width: 100%;
 	height: 400px;
-  }
-  
-  /* Contact Form */
-  #contact #contact-form .single-form {
+}
+
+/* Contact Form */
+#contact #contact-form .single-form {
 	margin-bottom: 20px;
-  }
-  
-  #contact-form label {
+}
+
+#contact-form label {
 	display: block;
 	margin-bottom: 5px;
-  }
-  
-  #contact-form input,
-  #contact-form textarea {
+}
+
+#contact-form input,
+#contact-form textarea {
 	width: 100%;
 	padding: 10px;
 	border: 1px #ddd solid;
-  }
-  
-  #contact-form textarea {
+}
+
+#contact-form textarea {
 	height: 200px;
-  }
-  
-  #contact-form input:focus,
-  #contact-form textarea:focus {
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
 	outline: none;
 	border-color: var(--main-color);
-  }
-  .foto-about{
-	width: 20em; height: 20em; 
-  }
-  .slider {
-    width: 100vw;
-   
-    margin: auto;
-    overflow: hidden;
-	
+}
+.foto-about {
+	width: 20em;
+	height: 20em;
+}
+.slider {
+	width: 100vw;
+
+	margin: auto;
+	overflow: hidden;
 }
 
 .slider .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 14);
+	display: flex;
+	animation: scroll 40s linear infinite;
+	-webkit-animation: scroll 40s linear infinite;
+	width: calc(200px * 14);
 }
 
 .slider .slide {
-    width: 200px;
+	width: 200px;
 }
 
 .slider .slide img {
-    width: 100%;
+	width: 100%;
 }
 
 @keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
-    }
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	100% {
+		-webkit-transform: translateX(calc(-200px * 7));
+		transform: translateX(calc(-200px * 7));
+	}
 }
-.whatsapp{
+.whatsapp {
 	position: fixed;
 	right: 5px;
 	bottom: 5px;
