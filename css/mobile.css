@@ -2,6 +2,7 @@
 .display-1 {
 	font-size: 40px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .display-2 {
 	font-size: 20px;
@@ -14,18 +15,6 @@
 	/* https://i.pinimg.com/originals/4f/df/fd/4fdffdd111728fdd22bfedc57eeda7d7.jpg */
 
 	height: 100%;
-	overflow: auto;
-	background: linear-gradient(
-		315deg,
-		rgb(5, 29, 41) 3%,
-		rgb(54, 3, 43) 38%,
-		rgb(37, 26, 4) 68%,
-		rgb(0, 0, 0) 98%
-	);
-	animation: gradient 15s ease infinite;
-	background-size: 400% 400%;
-	background-attachment: fixed;
-	overflow-x: hidden;
 	line-height: 1.5;
 }
 
@@ -76,9 +65,12 @@
 	height: 20px;
 	margin: 2px;
 }
-/* .container{
 
-} */
+.container {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
 .foto-about {
 	width: 15em;
 	height: 10em;
