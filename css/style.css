@@ -93,6 +93,7 @@ h1 {
 }
 h2 {
 	font-size: 38px;
+	font-family: "Libre Baskerville", sans-serif;
 }
 h4 {
 	font-size: 25px;
@@ -138,6 +139,7 @@ hr {
 }
 
 .large {
+	font-family: "Libre Baskerville", sans-serif;
 	font-size: 18px;
 }
 
@@ -201,9 +203,7 @@ hr {
 
 #navbar .logo img {
 	height: 4rem;
-	box-shadow: 0em 0em 0em 0.5em #f491203a;
-	background: transparent;
-	border-radius: 10px;
+
 }
 
 #navbar a {
@@ -269,6 +269,7 @@ hr {
 
 #about .about-text {
 	padding: 60px 50px;
+	font-family: "Libre Baskerville", sans-serif;
 }
 
 #about .about-text p {
