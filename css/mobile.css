@@ -23,11 +23,6 @@
 	height: 100%;
 }
 
-/* Navbar */
-#navbar ul li {
-	margin-left: 20px;
-}
-
 /* Showcase */
 #showcase {
 	padding-top: 80px;
@@ -77,4 +72,9 @@
 }
 .slide {
 	height: 10em;
+}
+
+.navbar-nav {
+	position: relative;
+	right: 0;
 }
