@@ -66,7 +66,7 @@
 	margin: 2px;
 }
 
-.containerCSS {
+.container {
 	text-align: center;
 	margin-bottom: 5rem;
 }
@@ -77,21 +77,4 @@
 }
 .slide {
 	height: 10em;
-}
-
-.serviceBox {
-	border-left: none;
-	border-top: none;
-	border-bottom: 2px solid #ffffff1f;
-	border-right: none;
-	position: relative;
-}
-
-.navbar-nav {
-	position: relative;
-	right: 0;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
