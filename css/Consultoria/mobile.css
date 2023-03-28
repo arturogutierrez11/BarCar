@@ -1,0 +1,35 @@
+/* Utility Classes */
+.display-1 {
+	font-size: 50px;
+}
+
+
+
+/* Navbar */
+#navbar ul li {
+	margin-left: 20px;
+}
+
+
+/* Work */
+#work .work-row {
+	flex-direction: column;
+}
+
+/* About */
+#about {
+	flex-direction: column;
+}
+
+
+
+.foto-about{
+	width: 100%;
+	margin-top: 92px;
+	
+}
+#navbar{
+	width: 100%;
+	
+}
+
