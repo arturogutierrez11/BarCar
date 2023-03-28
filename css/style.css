@@ -125,7 +125,7 @@ hr {
 }
 
 /* Utility Classes */
-.container {
+.containerCSS {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 5px;
@@ -172,13 +172,37 @@ hr {
 	color: #f49020;
 	border-color: white;
 	border: 3px solid;
+	transform: translateY(-0.5em);
 }
 
 .btn2-link {
-	color: #f49020;
-	text-transform: uppercase;
+	color: white;
+	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 400;
+	text-decoration: none;
+	background: transparent;
+	transition-duration: 0.5s;
+
+	border: 1px solid #f491207a;
+}
+
+.btn2-link:hover {
+	background: #f49120a1;
+	border: none;
+
+	transition: 0.5s;
+}
+
+.serviceBox {
+	border: 5px solid #ffffff1f;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	position: relative;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.144);
+	box-shadow: 1em 1em 1em 0.5em #0000003a;
 }
 
 /* Header */
@@ -188,7 +212,7 @@ hr {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 70vh;
 }
 .subtitle {
 	font-size: 15px;
@@ -196,11 +220,12 @@ hr {
 
 /* Navbar */
 #navbar {
-	height: 120px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.171);
+	box-shadow: 0.1em 1em 1em 0.2em rgba(255, 255, 255, 0.062);
 }
 
 #navbar .logo img {
-	height: 4rem;
+	height: 3rem;
 	box-shadow: 0em 0em 0em 0.5em #f491203a;
 	background: transparent;
 	border-radius: 10px;
@@ -215,7 +240,7 @@ hr {
 	letter-spacing: 0.8px;
 }
 
-#navbar .container {
+#navbar .containerCSS {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -230,36 +255,16 @@ hr {
 	margin-left: 40px;
 }
 
+.navbar-nav {
+	position: absolute;
+	right: 8%;
+}
+
+.navBtn {
+	border-color: white;
+}
+
 /* Showcase */
-
-/* Work */
-#work {
-	padding: 80px 0;
-}
-
-#work h2 {
-	text-align: center;
-}
-
-#work .work-row {
-	display: flex;
-}
-.title-1 {
-	display: inline;
-}
-
-#work .work-row-box {
-	border: 2px solid #1c1c1c;
-	margin: 10px;
-	padding: 30px;
-	background-color: #ffffff;
-	color: #000;
-	border-radius: 2%;
-}
-
-#work .work-row-box p {
-	padding-bottom: 17px;
-}
 
 /* About */
 #about {
@@ -280,7 +285,7 @@ hr {
 	padding: 100px 0;
 }
 
-#contact .container {
+#contact .containerCSS {
 	display: flex;
 	justify-content: space-between;
 }
@@ -320,7 +325,7 @@ hr {
 
 .nuestros-s {
 	color: #f49020;
-	font-size: 33px;
+	font-size: 3rem;
 }
 .box-from {
 	margin: 2px;
