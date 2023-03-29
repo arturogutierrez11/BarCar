@@ -1,49 +1,36 @@
-#contact {
+#contact1 {
     height: 100%;
    
   }
   
-#contact .box-contact-features {
+#contact1 .box-contact-features {
     float: none;
     width: 100%;
     
 
   }
   
-  #contact .features-contact .box-form{
+  #contact1 .features-contact .box-form{
     float: none;
     width: 100%;
   }
- #navbar{
-	width: 100%;
-	
-	
-    
-} 
-#navbar .logo{
-    float: none;
-    text-align: center;
+  .navbar-nav {
+    position: relative;
+    right: 0;
   }
-  
-  #navbar ul, 
-  #navbar ul li {
-    float: none;
-  }
-  
-  #navbar ul li a {
-    padding: 5px;
-  }
-  
  
-  .ig{
-   margin: 15px;
+    
+  #contact {
+    padding: 30px 0;}
+  #contact .contact-info p {
+    font-size: 14px;
   }
-  .lk{
-    margin: 15px;
+  
+  #contact .contact-logo img {
+    height: 0px;
   }
-  .wp{
-    margin: 15px;
-  }
-  .ml{
-    margin: 12px;
+  
+  #contact .contact-social img {
+    height: 20px;
+    margin: 2px;
   }
