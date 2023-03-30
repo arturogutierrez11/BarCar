@@ -20,21 +20,20 @@
 			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./index2.css" />
 
-		<link
-			rel="stylesheet"
-			media="screen and (max-width:768px)"
-			href="./indexM.css"
-		/>
+		
+		
 		<link rel="stylesheet" href="../global.css" />
-		<title>BarCar MKT | Welcome</title>
+        <link rel="icon" href="../images/logo grande-PhotoRoom.png-PhotoRoom.png" />
+
+		<title>GLS | Contacto</title>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-expand-lg py-4" id="navbar">
 			<div class="container">
-				<a class="navbar-brand logo px-3" href="#"
+				<a class="navbar-brand logo px-3" href="../index.html"
 					><img
 						src="../images/logo grande-PhotoRoom.png-PhotoRoom.png"
 						class="img-fluid p-2"
@@ -53,48 +52,100 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-link px-4" href="./aboutUs.html">Trabajo</a>
-						<a class="nav-link px-4" href="">Nosotros</a>
-						<a class="nav-link px-4" href="./contact.html">Contacto</a>
+						<a class="nav-link px-4" href="../index.html">Inicio</a>
+						<a class="nav-link px-4" href="../about/index.html">Nosotros</a>
+						
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<section id="contact1">
-			<div class="box-contact-features">
-				<i class="fas fa-map-marker-alt fa-2x"></i>
-				<h4>Address</h4>
-				<p>Bella Vista, San Miguel</p>
-				<p>Buenos Aires, Argentina</p>
-				<!-- <a href="https://goo.gl/maps/Ar37RNRZVwKkU8jP8">ver mapa</a> -->
-				<!-- <div class="box-form">-->
+		<main>
+			<!-- AQUI COMIENZA DIV DE DETALLES DE CONTACTO -->
+			<div class="container2">
+			  <div class="form">
+				<div class="contact-info">
+				  <h3 class="title">CONTACTANOS</h3>
+				  <p class="text">
+					Te agradecemos que dediques un momento a completar esta formulario, su objetivo es entrar en contacto con usted y sacar su duda.
+				  </p>
+		  
+				  <div class="info">
+					<div class="information">
+					  <img src="/assets/ICONOS/location.png" class="icon" alt="" />
+					  <p>Bella Vista, San Miguel, Buenos Aires, Argentina</p>
+					</div>
+					<div class="information">
+					  <img src="/assets/ICONOS/email.png" class="icon" alt="" />
+					  <p>glsdigital.atencion@gmail.com</p>
+					</div>
+					<div class="information">
+					  <img src="/assets/ICONOS/phone.png" class="icon" alt="" />
+					  <p>+54 9 11 3259-8972</p>
+					</div>
+				  </div>
+		  
+				  <div class="social-media">
+					<p>Nuestras Redes :</p>
+					<div class="social-icons">
+					  <a href="/pages/error404.html">
+						<i class="fab fa-instagram"></i>
+					  </a>
+					  <a href="/pages/error404.html">
+						<i class="fab fa-facebook"></i>
+					  </a>
+					  <a href="/pages/error404.html">
+						<i class="fab fa-twitter"></i>
+					  </a>
+					  <!-- <a href="/pages/error404.html">
+						<i class="fab fa-google-plus"></i>
+					  </a> -->
+					</div>
+				  </div>
+				</div>
+				<!-- FIN DIV DE DETALLES DE CONTACTO -->
+		  
+				<!-- COMIENZA EL FORMULARIO DE CONTACTO -->
+		  
+				<div class="contact-form bg-dark">
+				  <form id="form"  autocomplete="off" >
+					<h3 class="title">HACE TU CONSULTA</h3>
+					<div class="input-container">
+					  <input type="text" name="name" class="input" id="input-name" required  minlength="3" maxlength="20" autofocus/> 
+					  <label for="">Nombre</label>
+					  <span>Username</span>
+					</div>
+					<div class="input-container">
+					  <input type="email" name="email" class="input" id="input-email" required minlength="10"maxlength="50"/> 
+					  <label for="">E-mail</label>
+					  <span>Email</span>
+					</div>
+					<div class="input-container">
+					  <input type="tel" name="phone" class="input" id="input-phone"/> <!--required pattern="[0-9]+"  -->
+					  <label for="">Teléfono</label>
+					  <span>Phone</span>
+					</div>
+					<div class="input-container textarea" >
+					  <textarea name="message" class="input" id="input-message" maxlength="200"></textarea> 
+					  <label for="">Mensaje</label>
+					  <span>Message</span>
+					</div>
+					<button type="submit" value="Enviar" class="boton" onclick="validar(event)">Enviar</button>
+				  </form>
+				</div>
+		  
+				<!-- FIN FORMULARIO DE CONTACTO -->
+		  
+			  </div>
+			</div>
+		  </main> 
+		  
 
-				<!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9773.881427518889!2d-58.704608092325614!3d-34.572415854361424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdcc4e992b0d%3A0x460e263742c2d780!2sBella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1678981922389!5m2!1ses-419!2sar"
-          width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>  -->
-			</div>
-			<div class="box-contact-features">
-				<i class="fas fa-mobile-alt fa-2x"></i>
-				<h4>Phone</h4>
-				<p>Office: 123 456 7890</p>
-				<p>Support: 555 777 8989</p>
-			</div>
-			<div class="box-contact-features">
-				<i class="fas fa-envelope fa-2x"></i>
-				<h4>Email</h4>
-				<p>Office: hello@mail.com</p>
-				<p>Support: support@mail.com</p>
-			</div>
-		</section>
-		<hr />
-
-		<footer class="mt-5">
-			<div class="container-fluid backgroundFooter">
+		<!-- <footer class="mt-5">
+			<div class="container-fluid  backgroundFooter">
 				<div class="row pt-5 px-4 text-white">
 					<div class="p-2 col-xs-12 text-center col-md-6 col-lg-3">
-						<!-- REEMPLAZAR CON LOGO DE LA PAGINA -->
+						 REEMPLAZAR CON LOGO DE LA PAGINA 
 						<img
 							src="../images/logo grande-PhotoRoom.png-PhotoRoom.png"
 							width="90"
@@ -175,7 +226,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

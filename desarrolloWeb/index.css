@@ -269,43 +269,7 @@ hr {
   }
 
 
-  /* Contact */
-#contact {
-	padding: 100px 0;
-}
 
-#contact .container {
-	display: flex;
-	justify-content: space-between;
-}
-
-#contact .contact-info,
-#contact .contact-logo,
-#contact .contact-social {
-	flex: 1;
-}
-
-#contact .contact-info p {
-	color: #e1a87a;
-}
-
-#contact .contact-logo img {
-	height: 80px;
-}
-
-#contact .contact-logo {
-	text-align: center;
-}
-
-#contact .contact-social img {
-
-	height: 30px;
-	margin: 5px;
-}
-
-#contact .contact-social {
-	text-align: right;
-}
 .slider {
     width: 100vw;
 	height: 100px;
@@ -343,4 +307,7 @@ hr {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
+}
+.backgroundFooter {
+	background: rgba(128, 128, 128, 0.253);
 }

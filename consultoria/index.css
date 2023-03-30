@@ -306,3 +306,6 @@ hr {
     font-size: 15px;
 	color: #000;
 }
+.backgroundFooter {
+	background: rgba(128, 128, 128, 0.253);
+}
