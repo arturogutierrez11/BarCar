@@ -20,12 +20,14 @@
 			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./index2.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="stylesheet"
+			media="screen and (max-width:768px)"
+			href="./indexM.css"
+		/>
 
-		
-		
-		<link rel="stylesheet" href="../global.css" />
-        <link rel="icon" href="../images/logo grande-PhotoRoom.png-PhotoRoom.png" />
+		<link rel="icon" href="../images/logo grande-PhotoRoom.png-PhotoRoom.png" />
 
 		<title>GLS | Contacto</title>
 	</head>
@@ -33,7 +35,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg py-4" id="navbar">
 			<div class="container">
-				<a class="navbar-brand logo px-3" href="../index.html"
+				<a class="navbar-brand logo px-3" href="#"
 					><img
 						src="../images/logo grande-PhotoRoom.png-PhotoRoom.png"
 						class="img-fluid p-2"
@@ -52,9 +54,9 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-link px-4" href="../index.html">Inicio</a>
-						<a class="nav-link px-4" href="../about/index.html">Nosotros</a>
-						
+						<a class="nav-link px-4" href="#work">Nuestros Servicios</a>
+						<a class="nav-link px-4" href="./about/index.html">Nosotros</a>
+						<a class="nav-link px-4" href="./contact/index.html">Contacto</a>
 					</div>
 				</div>
 			</div>
@@ -63,83 +65,119 @@
 		<main>
 			<!-- AQUI COMIENZA DIV DE DETALLES DE CONTACTO -->
 			<div class="container2">
-			  <div class="form">
-				<div class="contact-info">
-				  <h3 class="title">CONTACTANOS</h3>
-				  <p class="text">
-					Te agradecemos que dediques un momento a completar esta formulario, su objetivo es entrar en contacto con usted y sacar su duda.
-				  </p>
-		  
-				  <div class="info">
-					<div class="information">
-					  <img src="/assets/ICONOS/location.png" class="icon" alt="" />
-					  <p>Bella Vista, San Miguel, Buenos Aires, Argentina</p>
-					</div>
-					<div class="information">
-					  <img src="/assets/ICONOS/email.png" class="icon" alt="" />
-					  <p>glsdigital.atencion@gmail.com</p>
-					</div>
-					<div class="information">
-					  <img src="/assets/ICONOS/phone.png" class="icon" alt="" />
-					  <p>+54 9 11 3259-8972</p>
-					</div>
-				  </div>
-		  
-				  <div class="social-media">
-					<p>Nuestras Redes :</p>
-					<div class="social-icons">
-					  <a  href="https://www.instagram.com/digital.gls/" target="_blank">
-						<i class="fab fa-instagram"></i>
-					  </a>
-					  <a href="https://www.linkedin.com/company/gls-digital-agency/" target="_blank">
-						<i class="fab fa-linkedin"></i>
-					  </a>
-					  <a href="mailto:glsdigital.atencion@gmail.com" target="_blank">
-						<i class="fab fa-gmail"></i>
-					  </a>
-					  <!-- <a href="/pages/error404.html">
+				<div class="form">
+					<div class="contact-info">
+						<h3 class="title">CONTACTANOS</h3>
+						<p class="text">
+							Te agradecemos que dediques un momento a completar esta
+							formulario, su objetivo es entrar en contacto con usted y sacar su
+							duda.
+						</p>
+
+						<div class="info">
+							<div class="information">
+								<img src="/assets/ICONOS/location.png" class="icon" alt="" />
+								<p>Bella Vista, San Miguel, Buenos Aires, Argentina</p>
+							</div>
+							<div class="information">
+								<img src="/assets/ICONOS/email.png" class="icon" alt="" />
+								<p>glsdigital.atencion@gmail.com</p>
+							</div>
+							<div class="information">
+								<img src="/assets/ICONOS/phone.png" class="icon" alt="" />
+								<p>+54 9 11 3259-8972</p>
+							</div>
+						</div>
+
+						<div class="social-media">
+							<p>Nuestras Redes :</p>
+							<div class="social-icons">
+								<a
+									href="https://www.instagram.com/digital.gls/"
+									target="_blank"
+								>
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a
+									href="https://www.linkedin.com/company/gls-digital-agency/"
+									target="_blank"
+								>
+									<i class="fab fa-linkedin"></i>
+								</a>
+								<a href="mailto:glsdigital.atencion@gmail.com" target="_blank">
+									<i class="fab fa-gmail"></i>
+								</a>
+								<!-- <a href="/pages/error404.html">
 						<i class="fab fa-google-plus"></i>
 					  </a> -->
+							</div>
+						</div>
 					</div>
-				  </div>
+					<!-- FIN DIV DE DETALLES DE CONTACTO -->
+
+					<!-- COMIENZA EL FORMULARIO DE CONTACTO -->
+
+					<div class="contact-form bg-dark">
+						<form id="form" autocomplete="off">
+							<h3 class="title">HACE TU CONSULTA</h3>
+							<div class="input-container">
+								<input
+									type="text"
+									name="name"
+									class="input"
+									id="input-name"
+									required
+									minlength="3"
+									maxlength="20"
+									autofocus
+								/>
+								<label for="">Nombre</label>
+								<span>Username</span>
+							</div>
+							<div class="input-container">
+								<input
+									type="email"
+									name="email"
+									class="input"
+									id="input-email"
+									required
+									minlength="10"
+									maxlength="50"
+								/>
+								<label for="">E-mail</label>
+								<span>Email</span>
+							</div>
+							<div class="input-container">
+								<input type="tel" name="phone" class="input" id="input-phone" />
+								<!--required pattern="[0-9]+"  -->
+								<label for="">Teléfono</label>
+								<span>Phone</span>
+							</div>
+							<div class="input-container textarea">
+								<textarea
+									name="message"
+									class="input"
+									id="input-message"
+									maxlength="200"
+								></textarea>
+								<label for="">Mensaje</label>
+								<span>Message</span>
+							</div>
+							<button
+								type="submit"
+								value="Enviar"
+								class="boton"
+								onclick="validar(event)"
+							>
+								Enviar
+							</button>
+						</form>
+					</div>
+
+					<!-- FIN FORMULARIO DE CONTACTO -->
 				</div>
-				<!-- FIN DIV DE DETALLES DE CONTACTO -->
-		  
-				<!-- COMIENZA EL FORMULARIO DE CONTACTO -->
-		  
-				<div class="contact-form bg-dark">
-				  <form id="form"  autocomplete="off" >
-					<h3 class="title">HACE TU CONSULTA</h3>
-					<div class="input-container">
-					  <input type="text" name="name" class="input" id="input-name" required  minlength="3" maxlength="20" autofocus/> 
-					  <label for="">Nombre</label>
-					  <span>Username</span>
-					</div>
-					<div class="input-container">
-					  <input type="email" name="email" class="input" id="input-email" required minlength="10"maxlength="50"/> 
-					  <label for="">E-mail</label>
-					  <span>Email</span>
-					</div>
-					<div class="input-container">
-					  <input type="tel" name="phone" class="input" id="input-phone"/> <!--required pattern="[0-9]+"  -->
-					  <label for="">Teléfono</label>
-					  <span>Phone</span>
-					</div>
-					<div class="input-container textarea" >
-					  <textarea name="message" class="input" id="input-message" maxlength="200"></textarea> 
-					  <label for="">Mensaje</label>
-					  <span>Message</span>
-					</div>
-					<button type="submit" value="Enviar" class="boton" onclick="validar(event)">Enviar</button>
-				  </form>
-				</div>
-		  
-				<!-- FIN FORMULARIO DE CONTACTO -->
-		  
-			  </div>
 			</div>
-		  </main> 
-		  
+		</main>
 
 		<!-- <footer class="mt-5">
 			<div class="container-fluid  backgroundFooter">

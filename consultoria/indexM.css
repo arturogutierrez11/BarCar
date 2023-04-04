@@ -3,13 +3,12 @@
 	font-size: 50px;
 }
 
-
-
 /* Navbar */
-#navbar ul li {
-	margin-left: 20px;
+.navbar-nav {
+	text-align: center;
+	position: relative;
+	right: 0;
 }
-
 
 /* Work */
 #work .work-row {
@@ -21,15 +20,10 @@
 	flex-direction: column;
 }
 
-
-
-.foto-about{
-	width:26em;
-    height: 21em;
-	
+.foto-about {
+	width: 26em;
+	height: 21em;
 }
-#navbar{
+#navbar {
 	width: 100%;
-	
 }
-
