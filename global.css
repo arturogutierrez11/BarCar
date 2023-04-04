@@ -333,6 +333,7 @@ hr {
 	animation: scroll 40s linear infinite;
 	-webkit-animation: scroll 40s linear infinite;
 	width: calc(200px * 14);
+	align-items: center;
 }
 
 .slider .slide {
